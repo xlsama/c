@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+  char c[100], d[100];
+  fgets(c, sizeof(c), stdin);
+
+  int len = strlen(c);
+  for (int i = 0; i < len; i++) {
+    d[len - i - 1] = c[i];
+  }
+
+  int result = strcmp(c, d);
+
+  printf("%d\n", result);
+
+  if (result < 0) {
+    printf("%d\n", -1);
+  } else if (result > 0) {
+    printf("%d\n", 1);
+  } else {
+    printf("%d\n", 0);
+  }
+
+  return 0;
+}
