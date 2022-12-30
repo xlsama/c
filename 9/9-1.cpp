@@ -1,5 +1,4 @@
 // sequence table implementation 顺序表的实现
-#include <cstdio>
 #include <stdio.h>
 
 #define MaxSize 50
